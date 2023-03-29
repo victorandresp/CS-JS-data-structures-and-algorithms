@@ -10,4 +10,4 @@ function primeNumber(n){
     }
     return true
 }
-console.log(primeNumber(9));
+console.log(primeNumber(9)); // Big O = O(n)

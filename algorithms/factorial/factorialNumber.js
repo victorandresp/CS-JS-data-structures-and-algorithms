@@ -7,4 +7,14 @@ function factorialNumber(n){
     }
     return acc
 }
-console.log(factorialNumber(4)) // Big O = O(n)
+console.log('My solution: ',factorialNumber(4)) // Big O = O(n)
+
+// Course solution 
+function factorialNumberCourse(n){
+    let result = 1
+    for (let i = 2; i <= n; i++) {
+        result = result * i
+    }
+    return result
+}
+console.log('Course solution: ',factorialNumberCourse(4)) // Big O = O(n)

@@ -1,0 +1,20 @@
+{
+  "name": "CS-JS-data-structures-and-algorithms",
+  "version": "1.0.0",
+  "description": "This is a repository for the study, review and implementation of the most commonly used data structures and algorithms in Javascript.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorandresp/CS-JS-data-structures-and-algorithms.git"
+  },
+  "author": "Víctor Andrés Ponce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victorandresp/CS-JS-data-structures-and-algorithms/issues"
+  },
+  "homepage": "https://github.com/victorandresp/CS-JS-data-structures-and-algorithms#readme"
+}

@@ -7,4 +7,4 @@ function factorialNumber(n){
     }
     return acc
 }
-console.log(factorialNumber(4))
+console.log(factorialNumber(4)) // Big O = O(n)

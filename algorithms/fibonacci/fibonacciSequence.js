@@ -21,3 +21,19 @@ function fibonacciSequenceCourse(n){
     return fibonacci
 }
 console.log('Course solution: ', fibonacciSequenceCourse(7)); // Big O = O(n)
+
+function recursiveFibonacciSequence(n, array){
+    if(!array){
+        // console.log();
+        const arrayNew = [0, 1]
+        n = n-2
+        return recursiveFibonacciSequence(n, arrayNew)
+    }
+    if(n === 0 || n <= 1){
+        return array
+    }
+    array[array.length] = array[array.length-2] + array[array.length-1]
+    return recursiveFibonacciSequence(n-1, array)
+}
+
+console.log('recursive', recursiveFibonacciSequence(7));

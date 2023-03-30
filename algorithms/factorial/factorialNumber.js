@@ -18,3 +18,14 @@ function factorialNumberCourse(n){
     return result
 }
 console.log('Course solution: ',factorialNumberCourse(4)) // Big O = O(n)
+
+// recursive solution
+
+function recursiveFactorialNumber(n){
+ if(n === 0){
+    return 1
+ } 
+    return n * recursiveFactorialNumber(n-1)
+}
+
+console.log('Course solution: ', recursiveFactorialNumber(4)) // Big O = O(n)

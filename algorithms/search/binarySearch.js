@@ -47,3 +47,25 @@ function correctBinarySearch(arr, value){
 const arraytest = [-2, 1, 2, 4, 8, 10, 13] // for binary search, the array must mandatory be in order
 console.log('solve:', correctBinarySearch(arraytest, 8));
 
+function recursiveBinarySearch(arr, value){
+    return search(arr, value, 0, arr.length-1)
+}  
+
+function search(arr, value, start, end){
+    if(start > end){
+        return -1
+    }
+    const middle = Math.floor((start + end) / 2)
+    
+    if(arr[middle] === value){
+        return middle
+    }
+    if(value > arr[middle]){
+        return search(arr, value, middle + 1, end)
+    }else{
+        return search(arr, value, start, middle - 1)
+    }   
+}
+
+const arraytest2 = [-2, 1, 2, 4, 8, 10, 13] // for binary search, the array must mandatory be in order
+console.log('recursive:', recursiveBinarySearch(arraytest, 13));

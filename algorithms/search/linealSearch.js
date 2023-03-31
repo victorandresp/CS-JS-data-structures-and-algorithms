@@ -7,4 +7,4 @@ function findIndex(arr, value){
     return index
 }
 const array = [-2, 1, 3, 19, 20, 9]
-console.log(findIndex(array, 99))
+console.log(findIndex(array, 99)) // Big-O = O(n)
